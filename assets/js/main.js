@@ -21,7 +21,22 @@ var swiperPopular = new Swiper(".popular__container", {
   });
 
 /*=============== VALUE ACCORDION ===============*/
+const accordionItems = document.querySelectorAll('.value__accordion-item');
 
+accordionItems.forEach((item) => {
+  const accordionHeader = item.querySelector('.value__accordion-header');
+
+  accordionHeader.addEventListener('click', () => {
+    const openItem = document.querySelector('.accordion-open')
+    toggleItem(item)
+
+    console.log(openItem)
+
+    if (openItem && openItem !== item) {
+      toggleItem(openItem)
+    }
+  })
+});
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
