@@ -632,6 +632,29 @@ body.dark-theme {
     row-gap: 2rem;
 }
 
+.contact__images {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.contact__orbe {
+    width: 266px;
+    height: 316px;
+    background-color: hsl(228, 24%, 97%);
+    border-radius: 135px 135px 16px 16px;
+}
+
+.contact__img {
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 125px 125px 12px 12px;
+    inset: 0;
+    margin: auto;
+    box-shadow: 0 16px 32px hsla(228, 66%, 25%, 0.25);
+}
 .contact__description {
     font-size: var(--small-font-size);
     margin-bottom: 2.5rem;
