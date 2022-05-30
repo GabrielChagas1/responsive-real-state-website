@@ -758,6 +758,7 @@ body.dark-theme {
 /*=============== FOOTER ===============*/
 .footer__container {
     row-gap: 2.5rem;
+    justify-content: space-between;
 }
 
 .footer__logo {
